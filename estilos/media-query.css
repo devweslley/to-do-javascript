@@ -1,80 +1,79 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 768px){
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'Helvetica';
-    background-color: #1e4769;
+    background-image: linear-gradient(to right, #1e4769, #080808);
     color: #ffffff;
     text-align: center;
     padding-top: 30px;
-    font-size: 12px;
 }
-
+    
 #container {
-    width: 280px;
+    width: 500px;
     margin: auto;
-}
-
+    }
+    
 /* taks-form */
-
+    
 header {
     margin-top: 40px;
 }
-
+    
 #add-task-form{
     position: relative;
 }
-
+    
 #add-task-form input {
     box-sizing: border-box;
     border: 1px solid #34073d;
     background: #fff;
     color: #34073d;
     padding: 15px;
-    font-size: 12px;
+    font-size: 18px;
     width: 100%;
 }
-
+    
 #add-task-form input::placeholder {
     color: #34073d;
 }
-
+    
 #add-task-form input:focus {
     outline: none;
 }
-
+    
 #add-btn {
     position: absolute;
     background-color: #fff;
     border: 1px solid #34073d;
     cursor: pointer;
     width: 60px;
-    height: 47px;
+    height: 53px;
     top: 0;
     right: 0;
-    padding-top: 6px;
-    font-size: 17px;
+    padding-top: 3px;
 }
-
+    
 #add-btn:hover {
     background: #34073d;
     color: #fff;
 }
-
+    
 /* task container */
-
+    
 #task-list {
     list-style: none;
     padding-left: 0;
 }
-
+    
 #task-list li {
     text-align: left;
-    height: 30px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 50px;
     position: relative;
-    border-bottom: 3px solid #111111;
+    border-bottom: 3px solid #34073d;
     background-color: #fff;
     color: #34073d;
     margin-bottom: 10px;
@@ -82,42 +81,45 @@ header {
     transition: .5s;
     font-weight: bold;
 }
-
+    
 #task-list ion-icon {
     position: absolute;
-    height: 20px;
+    height: 40px;
     transition: .5s;
     cursor: pointer;
     width: 30px;
     padding: 5px;
     font-size: 28px;
 }
-
+    
 .done-btn {
     right: 40px;
 }
-
+    
 .done-btn:hover{
     color: #fff;
     background-color: #09e01b;
-
+    
 }
-
+    
 .remove-btn {
     right: 0px;
 }
-
+    
 .remove-btn:hover {
     color: #fff;
     background-color: #ff0000
 }
-
+    
 .hide {
     display: none;
 }
-
+    
 #task-list li.done {
     background-color: #34073d;
     color: #fff;
     text-decoration: line-through;
 }
+    
+}
+
